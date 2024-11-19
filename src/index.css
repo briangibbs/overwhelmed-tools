@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --bg-accent: #2a628f;
+    --text-primary: #07213F;
+    --text-secondary: #2a628f;
+    --text-accent: #C5B358;
+    --border-primary: #e2e8f0;
+    --border-secondary: #2a628f;
+    --border-accent: #C5B358;
+    --ring-primary: #07213F;
+    --ring-secondary: #2a628f;
+    --ring-accent: #C5B358;
+    --ring-offset-primary: #ffffff;
+    --ring-offset-secondary: #f8fafc;
+    --ring-offset-accent: #ffffff;
+  }
+
+  :root[data-theme="dark"] {
+    --bg-primary: #000919;
+    --bg-secondary: #07213F;
+    --bg-accent: #2a628f;
+    --text-primary: #ffffff;
+    --text-secondary: #A9987E;
+    --text-accent: #C5B358;
+    --border-primary: rgba(255, 255, 255, 0.1);
+    --border-secondary: rgba(42, 98, 143, 0.5);
+    --border-accent: rgba(197, 179, 88, 0.5);
+    --ring-primary: #ffffff;
+    --ring-secondary: #2a628f;
+    --ring-accent: #C5B358;
+    --ring-offset-primary: #000919;
+    --ring-offset-secondary: #07213F;
+    --ring-offset-accent: #000919;
+  }
+
+  select option {
+    @apply bg-skin-primary text-skin-primary;
+  }
+}
